@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Studio - Agendar Cita</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Firebase App (Compat SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <!-- Firebase Authentication (Compat SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <!-- Firebase Firestore (Compat SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+</head>
+<body>
+    <header>
+        <div><img id= logo src="../assets/images/logo.png" alt="Descripción de la imagen"></div>
+        <h1>Agendar Cita</h1>
+        <button id="logoutButton">Cerrar Sesión</button>
+        <a href="../index.html">
+            <button>Home</button>
+        </a>
+    </header>
+
+    <main>
+        <form id="scheduleForm">
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="service">Servicio:</label>
+            <select id="service" name="service" required>
+                <option value="">Selecciona un servicio</option>
+                <option value="Estilismo">Estilismo</option>
+                <option value="Lashes">Lashing</option>
+                <option value="Manicure">Manicure</option>
+                <!-- Añade más servicios según tus necesidades -->
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+        <div id="availabilityMessage"></div>
+         <!-- Contenedor para mostrar citas existentes -->
+        <div id="existingAppointments">
+            <h2>Citas Existentes</h2>
+            <ul id="appointmentsList">
+                <!-- Las citas existentes se cargarán aquí -->
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nova Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/scripts.js" defer></script>
+</body>
+</html>

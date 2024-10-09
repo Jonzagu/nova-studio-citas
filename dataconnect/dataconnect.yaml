@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "nova-studio-citas"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "nova-studio-citas-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

@@ -1,0 +1,31 @@
+{
+  "users": {
+    "user1": {
+      "username": "usuario1",
+      "email": "usuario1@example.com",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    "user2": {
+      "username": "usuario2",
+      "email": "usuario2@example.com",
+      "createdAt": "2024-01-02T00:00:00Z"
+    }
+  },
+  "appointments": {
+    "appointment1": {
+      "date": "2024-10-10",
+      "time": "10:00",
+      "service": "Corte de pelo",
+      "userId": "user1",
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  },
+  "promotions": {
+    "promotion1": {
+      "title": "Descuento de otoño",
+      "description": "20% de descuento en todos los servicios.",
+      "discount": 20,
+      "active": true
+    }
+  }
+}

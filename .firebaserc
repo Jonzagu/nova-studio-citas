@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "nova-citas",
+    "citas nova": "nova-citas"
+  },
+  "targets": {},
+  "etags": {}
+}
